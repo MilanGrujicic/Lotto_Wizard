@@ -1,7 +1,9 @@
 *** Settings ***
 Documentation    Resource file for loto check.
 
-Library    Browser 
+Library    Browser
+Library    Collections
+Library    String
 
 Resource    ./Loto_Check_Selectors.resource
 

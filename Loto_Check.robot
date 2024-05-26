@@ -6,9 +6,6 @@ Resource    RESOURCES/Loto_Check_Selectors.resource
 
 Test Setup    OPEN WEBPAGE
 
-Library    OperatingSystem
-Library    Collections
-Library    String
 
 *** Test Cases ***
 Get Winning Numbers
