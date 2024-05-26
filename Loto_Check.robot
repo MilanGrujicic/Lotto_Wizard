@@ -10,8 +10,4 @@ Test Setup    OPEN WEBPAGE
 *** Test Cases ***
 Get Winning Numbers
     ${winning_numbers} =    Get Text    ${WINNING_NUMBERS}
-    FOR    ${element}    IN    @{winning_numbers}
-        Log    ${element}
-        
-    END
-    # Log To Console    ${winning_numbers}
+    Log To Console    ${winning_numbers}
