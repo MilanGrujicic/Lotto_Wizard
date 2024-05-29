@@ -4,6 +4,7 @@ Documentation    Resource file for loto check.
 Library    Browser
 Library    Collections
 Library    String
+Library    OperatingSystem
 
 Resource    ./Loto_Check_Selectors.resource
 
@@ -29,3 +30,5 @@ GET WINNING NUMBERS
 
     @{winning_numbers}=    Get Slice From List    ${split_winning_numbers}    0    7
     Log To Console    \nWinning Numbers: ${winning_numbers}
+    ${winning_numbers_string}=    BuiltIn.Convert To String    ${winning_numbers}
+    Create File    winning_numbers.txt    ${winning_numbers_string}
