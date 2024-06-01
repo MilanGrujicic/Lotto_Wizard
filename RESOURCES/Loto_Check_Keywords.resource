@@ -29,6 +29,11 @@ GET WINNING NUMBERS
     ${split_winning_numbers}=    Split String    ${first_item_from_list_of_raw_winning_numbers}    \n
 
     @{winning_numbers}=    Get Slice From List    ${split_winning_numbers}    0    7
-    Log To Console    \nWinning Numbers: ${winning_numbers}
+    Log To Console    \nWritting the following numbers into file: ${winning_numbers}
+    WRITE WINNING NUMBERS INTO FILE    ${winning_numbers}
+
+WRITE WINNING NUMBERS INTO FILE
+    [Documentation]    Save list with winning numbers into a file.
+    [Arguments]    ${winning_numbers}
     ${winning_numbers_string}=    BuiltIn.Convert To String    ${winning_numbers}
     Create File    winning_numbers.txt    ${winning_numbers_string}
