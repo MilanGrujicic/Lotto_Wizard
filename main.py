@@ -1,8 +1,9 @@
 import subprocess
 
 def check_lottery(winning_numbers, played_numbers):
+    '''Compares winning numbers with played numbers.'''
     if played_numbers == winning_numbers:
-        print("You won the lottery!") 
+        print("You won the lottery!")
 
 file_to_run = f"./Loto_Check.robot"
 
