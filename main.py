@@ -15,8 +15,10 @@ def display_result(result):
     print(result)
     matched_numbers = [k for k, v in result.items() if v == True]
     missed_numbers = [k for k, v in result.items() if v == False]
-    print(f"Numbers you got right: {matched_numbers}")
-    print(f"Numbers you missed: {missed_numbers}")
+    print(f"You got {len(matched_numbers)} number(s) right: {matched_numbers}")
+    print(f"You missed {len(missed_numbers)} number(s): {missed_numbers}")
+    print(f"Winning numbers: {winning_numbers}")
+    print(f"Played numbers: {played_numbers}")
 
 file_to_run = f"./Loto_Check.robot"
 
