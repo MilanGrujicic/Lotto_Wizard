@@ -10,7 +10,7 @@ def check_lottery(winning_numbers, played_numbers):
             result[played_numbers[number]] = False
     display_result(result)
 
-def display_result(result={'4': True, '23': True, '34': True, '40': False, '45': True, '6': True, '7': True}):
+def display_result(result):
     print(result)
     matched_numbers = [k for k, v in result.items() if v == True]
     missed_numbers = [k for k, v in result.items() if v == False]
