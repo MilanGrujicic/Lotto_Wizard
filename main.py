@@ -14,6 +14,4 @@ with open("winning_numbers.txt", "r") as f:
 
 
 played_numbers = ["4", "23", "34", "39", "45", "6", "7"]
-print("Winning numbers: ", winning_numbers, type(winning_numbers))
-print("Played numbers: ", played_numbers, type(played_numbers))
 check_lottery(list(winning_numbers), played_numbers)
