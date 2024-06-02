@@ -11,6 +11,7 @@ def check_lottery(winning_numbers, played_numbers):
     display_result(result)
 
 def display_result(result):
+    '''Filters matched and missed numbers from given dictionary.'''
     print(result)
     matched_numbers = [k for k, v in result.items() if v == True]
     missed_numbers = [k for k, v in result.items() if v == False]
