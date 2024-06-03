@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    Resource file for loto check.
+Documentation    Resource file for loto checker.
 
 Library    Browser
 Library    Collections
