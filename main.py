@@ -1,4 +1,7 @@
 import subprocess
+from twilio.rest import Client
+import os
+from dotenv import load_dotenv
 
 def check_lottery(winning_numbers, played_numbers):
     '''Compares winning numbers with played numbers.'''
@@ -15,10 +18,34 @@ def display_result(result):
     print(result)
     matched_numbers = [k for k, v in result.items() if v == True]
     missed_numbers = [k for k, v in result.items() if v == False]
-    print(f"You got {len(matched_numbers)} number(s) right: {matched_numbers}")
-    print(f"You missed {len(missed_numbers)} number(s): {missed_numbers}")
-    print(f"Winning numbers: {winning_numbers}")
-    print(f"Played numbers: {played_numbers}")
+    payload =f'''
+            You got {len(matched_numbers)} number(s) right:\n{matched_numbers}\n
+            You missed {len(missed_numbers)} number(s):\n{missed_numbers}\n
+            Winning numbers:\n{winning_numbers}
+            Played numbers:\n{played_numbers}
+            '''
+    send_sms(payload)
+
+    # print(f"You got {len(matched_numbers)} number(s) right: {matched_numbers}")
+    # print(f"You missed {len(missed_numbers)} number(s): {missed_numbers}")
+    # print(f"Winning numbers: {winning_numbers}")
+    # print(f"Played numbers: {played_numbers}")
+
+def send_sms(payload):
+    load_dotenv()
+
+    account_sid = os.getenv('ACCOUNT_SID')
+    auth_token = os.getenv('AUTH_TOKEN')
+
+    client = Client(account_sid, auth_token)
+
+    message = client.messages.create(
+    from_='+12674946968',
+    body=payload,
+    to='+38669785000'
+    )
+    print(f"Message SID: {message.sid}.")
+    print(f"Message status: {message.status}.")
 
 file_to_run = f"./Loto_Check.robot"
 
