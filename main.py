@@ -26,8 +26,8 @@ def display_result(result):
             '''
     send_sms(payload)
 
-
 def send_sms(payload):
+    '''Send sms via twilio API with results.'''
     load_dotenv()
 
     account_sid = os.getenv('ACCOUNT_SID')
