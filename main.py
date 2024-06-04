@@ -26,10 +26,6 @@ def display_result(result):
             '''
     send_sms(payload)
 
-    # print(f"You got {len(matched_numbers)} number(s) right: {matched_numbers}")
-    # print(f"You missed {len(missed_numbers)} number(s): {missed_numbers}")
-    # print(f"Winning numbers: {winning_numbers}")
-    # print(f"Played numbers: {played_numbers}")
 
 def send_sms(payload):
     load_dotenv()
