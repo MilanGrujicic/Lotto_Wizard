@@ -30,15 +30,15 @@ def send_sms(payload):
     '''Send sms via twilio API with results.'''
     load_dotenv()
 
-    account_sid = os.getenv('ACCOUNT_SID')
-    auth_token = os.getenv('AUTH_TOKEN')
+    account_sid = os.getenv("ACCOUNT_SID")
+    auth_token = os.getenv("AUTH_TOKEN")
 
     client = Client(account_sid, auth_token)
 
     message = client.messages.create(
-    from_='+12674946968',
+    from_="+12674946968",
     body=payload,
-    to='+38669785000'
+    to="+38669785000"
     )
     print(f"Message SID: {message.sid}.")
     print(f"Message status: {message.status}.")
