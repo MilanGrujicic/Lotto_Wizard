@@ -17,7 +17,7 @@ OPEN WEBPAGE
     Take Screenshot
 
 GET WINNING NUMBERS
-    [Documentation]    From euro jackpot home page, get winnig numbers.
+    [Documentation]    From Eurojackpot home page, get winnig numbers.
     ${raw_winning_numbers} =    Get Text    ${WINNING_NUMBERS}
 
     @{list_of_raw_winning_numbers}    Create List
