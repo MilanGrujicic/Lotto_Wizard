@@ -1,4 +1,6 @@
 # Loto_Checker
+![Image Alt Text](./Lotto_Wizard_Logo.png)
+
 ## Description
 A piece of software that checks if one won the lottery by sending an SMS to a specific phone number using API calls.
 
@@ -9,7 +11,6 @@ When run periodically, the Lottery Checker saves the users time by letting them 
 ## Features
 - A test suite that scrapes the winning lottery numbers from the [EuroJackpot website](https://www.eurojackpot.com/) into a text file, using Robot framework;
 - A function that compares the winning numbers, with the numbers the user played, which can be set by the user.
-- A function that sends both winning numbers and played numbers to the user's phone number, by calling the [Twillio API](https://www.twilio.com/en-us). 
 
 ## Getting Started
 ### Prerequisites
