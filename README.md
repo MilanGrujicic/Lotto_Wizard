@@ -32,3 +32,5 @@ Once all the prerequisites are installed, run the following command from the rep
 `python3 main.py`
 
 You should get a message like the one shown below. 👇
+
+![photo_2024-06-11_23-38-43](https://github.com/MilanGrujicic/Lotto_Wizard/assets/48260426/a62850d1-d002-4f63-b0d2-22d5d68b0638)
