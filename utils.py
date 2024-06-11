@@ -34,9 +34,9 @@ def send_sms(payload):
     client = Client(account_sid, auth_token)
 
     message = client.messages.create(
-    from_="+12674946968",
+    from_="ADD_THE_DESTINATION_NUMBER_FROM_YOUR_TWILIO_ACCOUNT_HERE",
     body=payload,
-    to="+38669785000"
+    to="ADD_YOUR_PHONE_NUMBER_HERE"
     )
     print(f"Message SID: {message.sid}.")
     print(f"Message status: {message.status}.")
