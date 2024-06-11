@@ -6,7 +6,7 @@ A piece of software that checks if one won the lottery by sending an SMS to a sp
 
 This project enables users to be informed if they become millionaires. 
 
-When run periodically, the Lottery Checker saves the users time by letting them know about the lottery results every time new lottery-winning numbers are drawn.
+When run periodically, the Lotto Wizard saves the users time by letting them know about the lottery results every time new lottery-winning numbers are drawn.
 
 ## Features
 - A test suite that scrapes the winning lottery numbers from the [EuroJackpot website](https://www.eurojackpot.com/) into a text file, using Robot framework;
