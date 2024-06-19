@@ -25,7 +25,7 @@ def display_result(result, winning_numbers, played_numbers):
     send_sms(payload)
 
 def send_sms(payload):
-    '''Send sms via twilio API with results.'''
+    '''Send sms via Twilio API with results.'''
     load_dotenv()
 
     account_sid = os.getenv("ACCOUNT_SID")
