@@ -11,6 +11,6 @@ with open("winning_numbers.txt", "r") as f:
     winning_numbers = eval(winning_numbers)
 
 # SET PLAYED NUMBERS
-played_numbers = ["5", "13", "34", "40", "45", "6", "7"]
+played_numbers = ["5", "12", "34", "40", "45", "6", "7"]
 
 utils.check_lottery(list(winning_numbers), played_numbers)
