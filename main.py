@@ -13,4 +13,5 @@ with open("winning_numbers.txt", "r") as f:
 # SET PLAYED NUMBERS
 played_numbers = ["5", "12", "25", "40", "45", "6", "7"]
 
+# COMPARE PLAYED NUMBERS WITH WINNING NUMBERS.
 utils.check_lottery(list(winning_numbers), played_numbers)
