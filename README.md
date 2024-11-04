@@ -1,4 +1,4 @@
-# Loto_Checker
+# Lotto_Wizard
 ![Image Alt Text](./Lotto_Wizard_Logo.png)
 
 ## Description
