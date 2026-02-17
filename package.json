@@ -1,0 +1,22 @@
+{
+  "name": "lotto_wizard",
+  "version": "1.0.0",
+  "description": "Navigate to eurojackpot website and get lottery winning numbers.",
+  "main": "open_eurojackpot.js",
+  "scripts": {
+    "test": "npx playwright test open_eurojackpot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MilanGrujicic/Lotto_Wizard.git"
+  },
+  "author": "MilanGrujicic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MilanGrujicic/Lotto_Wizard/issues"
+  },
+  "homepage": "https://github.com/MilanGrujicic/Lotto_Wizard#readme",
+  "dependencies": {
+    "@playwright/test": "^1.58.2"
+  }
+}
